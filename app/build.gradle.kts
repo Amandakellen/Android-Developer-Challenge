@@ -49,4 +49,9 @@ dependencies {
     //retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    //exoplayer
+    implementation (libs.exoplayer.core)
+    implementation (libs.exoplayer.dash)
+    implementation (libs.exoplayer.ui)
 }

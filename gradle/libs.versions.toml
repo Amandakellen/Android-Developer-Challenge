@@ -1,5 +1,6 @@
 [versions]
 agp = "8.4.1"
+exoplayerCore = "2.19.1"
 koinAndroid = "1.0.2"
 koinAndroidVersion = "3.4.2"
 koinAndroidxViewmodel = "3.1.5"
@@ -15,6 +16,9 @@ retrofit = "2.10.0"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+exoplayer-core = { module = "com.google.android.exoplayer:exoplayer-core", version.ref = "exoplayerCore" }
+exoplayer-dash = { module = "com.google.android.exoplayer:exoplayer-dash", version.ref = "exoplayerCore" }
+exoplayer-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exoplayerCore" }
 insert-koin-koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroidVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
