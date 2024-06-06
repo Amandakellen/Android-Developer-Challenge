@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.challenge"
+    namespace = "com.example.infraestructure"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.challenge"
+        applicationId = "com.example.infraestructure"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -33,30 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
 }
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    // Koin
-    implementation(libs.insert.koin.koin.android)
-
-    //retrofit
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-
-    //exoplayer
-    implementation (libs.exoplayer.core)
-    implementation (libs.exoplayer.dash)
-    implementation (libs.exoplayer.ui)
-
-    //viewModel
-    implementation (libs.androidx.lifecycle.viewmodel.ktx )
-    implementation (libs.androidx.lifecycle.runtime.ktx)
 }

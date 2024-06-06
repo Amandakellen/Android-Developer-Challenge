@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Challenge"
 include(":app")
- 
+include(":infrastructure")
