@@ -59,4 +59,7 @@ dependencies {
     //viewModel
     implementation (libs.androidx.lifecycle.viewmodel.ktx )
     implementation (libs.androidx.lifecycle.runtime.ktx)
+
+    //infrastructure
+    implementation(project(":infrastructure"))
 }
