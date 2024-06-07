@@ -26,20 +26,31 @@ android {
             )
         }
     }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.0"
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
 }
 
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.runtime.android)
+    implementation(libs.androidx.ui.tooling.preview.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -47,19 +58,20 @@ dependencies {
     // Koin
     implementation(libs.insert.koin.koin.android)
 
-    //retrofit
+    // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
 
-    //exoplayer
-    implementation (libs.exoplayer.core)
-    implementation (libs.exoplayer.dash)
-    implementation (libs.exoplayer.ui)
+    // ExoPlayer
+    implementation(libs.exoplayer.core)
+    implementation(libs.exoplayer.dash)
+    implementation(libs.exoplayer.ui)
 
-    //viewModel
-    implementation (libs.androidx.lifecycle.viewmodel.ktx )
-    implementation (libs.androidx.lifecycle.runtime.ktx)
+    // ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    //infrastructure
+    // Infrastructure
     implementation(project(":infrastructure"))
+
 }
