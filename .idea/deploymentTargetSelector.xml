@@ -5,7 +5,10 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="infraestructure">
+      <SelectionState runConfigName="infrastructure">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="PreviewVideoPlayer">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
