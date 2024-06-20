@@ -11,7 +11,6 @@ class MyApp : Application() {
         startKoin {
             // Fornecer o contexto Android
             androidContext(this@MyApp)
-            // Incluir o módulo criado
             modules(myModule)
         }
     }

@@ -1,4 +1,4 @@
-package com.example.infraestructure.exoplayer
+package com.example.challenge.helper
 
 import android.content.Context
 import com.google.android.exoplayer2.ExoPlayer
